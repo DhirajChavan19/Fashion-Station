@@ -3,6 +3,7 @@ import './MainHeader.css';
 import {BiSearch} from 'react-icons/bi'
 import {FaUser} from 'react-icons/fa'
 import {FaShoppingCart} from 'react-icons/fa'
+import {AiOutlineMenu} from 'react-icons/ai'
 
 const MainHeader = () =>{
 
@@ -23,6 +24,11 @@ const MainHeader = () =>{
                     </div>
                 </div>
 
+                <div className="search-icon-input-container" onClick={expandSearchInput} >
+                            <input type="text" name="userSearch" className={`user-search-input ${isSearchOpen?'open-search':'close-search'}`}/>
+                            <BiSearch className="search-icon"/>
+                </div>
+
                 <div className="header-content">
                     <div className="categories-content-links">
                         <div className="mens-section">Men</div>
@@ -31,17 +37,17 @@ const MainHeader = () =>{
                             Kids
                         </div>
                     </div>
-
+                    
                     <div className="header-menu-containner">
-                        <div className="search-icon-input-container" onClick={expandSearchInput} >
-                            <input type="text" name="userSearch" className="user-search-input" style={isSearchOpen?{maxWidth:"140px"}:{width:"10px"}}/>
-                            <BiSearch className="search-icon"/>
-                        </div>
                         <div className="user-icon-container">
                             <FaUser/>
                         </div>
                         <div className="cart-icon-container">
                             <FaShoppingCart/>
+                        </div>
+
+                        <div className="menu-icon-container">
+                            <AiOutlineMenu/>
                         </div>
                     </div>
                 </div>
