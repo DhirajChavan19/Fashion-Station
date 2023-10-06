@@ -1,0 +1,45 @@
+.top-blck-header{
+    border: 1px solid;
+    background-color: black;
+    padding: 15px 8px;
+
+    .top-header-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .top-header-content{
+            color: white;
+            width: max-content;
+            font-size: 14.5px;
+            font-weight: 600;
+            letter-spacing: .4px;
+            word-spacing: 1px;
+        }
+
+        .top-header-acct{
+            select{
+                background-color: transparent;
+                color: white;
+                font-size: 14.5px;
+                border: none;
+                outline: none;
+                font-weight: 500;cursor: pointer;
+
+                option{
+                    color: black;
+                    font-weight: 500;
+                    font-size: 13.5px;
+                    border: none;
+                    outline: none;
+                    background-color: black;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
