@@ -101,6 +101,11 @@
                 }
             }
         }
+
+        .sidebar-content{
+
+            display: none;
+        }
     }
 }
 } 
@@ -110,6 +115,7 @@
         box-shadow: 0 8px 8px #d2d2d0;
         .main-header-nav{
             display: grid;
+            position: relative;
             max-width: 1000px;
             margin: 0 auto;
             padding: 16px 12px;
@@ -188,6 +194,34 @@
                         display: flex;
                         font-size: 22px;
                         font-weight: 700;
+                    }
+                }
+            }
+
+
+            .sidebar-content{
+                position: absolute;
+                top: 50px;
+                display: flex;
+                flex-direction: column;
+                right: 12px;
+                z-index: 500;
+                background-color: white;
+                border: 1px solid gray;
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                div{
+                    padding: 12px 30px 12px 12px;
+                    display: flex;
+                    column-gap: .8rem;
+                    font-size: 17px;
+                    font-weight: 600;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &:hover{
+                        background-color: #d2d2d0;
                     }
                 }
             }

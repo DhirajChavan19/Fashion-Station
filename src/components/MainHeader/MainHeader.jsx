@@ -12,6 +12,13 @@ const MainHeader = () =>{
     const expandSearchInput = () =>{
         setIsSearchOpen(true)
     }
+
+    const [isSidebarOpen,setIsSidebarOpen] = useState(false);
+
+    const handleSidebar = ()=>{
+        setIsSidebarOpen((isSidebarOpen)=>!isSidebarOpen)
+    }
+
     return(
         <div className="main-header-container">
             <div className="main-header-nav">
@@ -37,7 +44,7 @@ const MainHeader = () =>{
                             Kids
                         </div>
                     </div>
-                    
+
                     <div className="header-menu-containner">
                         <div className="user-icon-container">
                             <FaUser/>
@@ -46,9 +53,27 @@ const MainHeader = () =>{
                             <FaShoppingCart/>
                         </div>
 
-                        <div className="menu-icon-container">
+                        <div className="menu-icon-container" onClick={handleSidebar}>
                             <AiOutlineMenu/>
                         </div>
+                    </div>
+                </div>
+
+                <div className="sidebar-content" style={isSidebarOpen?{display:"flex"}:{display:"none"}}>
+                    <div className="sidebar-mens-content">
+                        Men
+                    </div>
+                    <div className="sidebar-womens-content">
+                        Women
+                    </div>
+                    <div className="sidebar-kids-content">
+                        Kids
+                    </div>
+                    <div className="user-icon-container">
+                        My Profile <FaUser/>
+                    </div>
+                    <div className="cart-icon-container">
+                        My Cart <FaShoppingCart/>
                     </div>
                 </div>
             </div>
