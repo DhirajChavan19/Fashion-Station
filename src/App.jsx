@@ -7,7 +7,7 @@ function App() {
   return(
     <Routes>
       <Route path='/' element={<MainPage/>}>
-        <Route path='' element={<MainComp/>}/>
+        <Route index element={<MainComp/>}/>
       </Route>
     </Routes>
   )
