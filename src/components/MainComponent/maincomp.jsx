@@ -5,8 +5,8 @@ import './maincomp.css'
 const MainComp = ()=>{
     return(
         <>
-            <TopHeader/>
-            <MainHeader/>
+        {/* main page content will come on this page */}
+        {/* which is imported in mainpagecomp */}
         </>
     )
 }
