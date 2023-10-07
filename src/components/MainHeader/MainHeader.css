@@ -1,6 +1,8 @@
 @media screen and (min-width: 750px) {
   .main-header-container {
     box-shadow: 0 8px 8px #d2d2d0;
+    position: relative;
+    z-index: 1000;
   }
   .main-header-container .main-header-nav {
     display: flex;
@@ -101,6 +103,8 @@
 @media screen and (max-width: 750px) {
   .main-header-container {
     box-shadow: 0 8px 8px #d2d2d0;
+    position: relative;
+    z-index: 1000;
   }
   .main-header-container .main-header-nav {
     display: grid;
@@ -209,6 +213,8 @@
 @media screen and (max-width: 340px) {
   .main-header-container {
     box-shadow: 0 8px 8px #d2d2d0;
+    position: relative;
+    z-index: 1000;
   }
   .main-header-container .main-header-nav {
     display: grid;
